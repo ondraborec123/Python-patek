@@ -37,11 +37,19 @@ while odehraneHry!=pocetHer:
     if ja==pc:
         print(f"\nVybrali jsme oba {select}, remiza!")
         draw+=1
-print(f"""
+if pocetHer<=9: print(f"""
 ╔═══════════════════════╗
 ║ VYSLEDKY              ║
 ║   Pocet her: {pocetHer}        ║
 ║   Vyhry: {win}            ║
 ║   Prohry: {lost}           ║
 ║   Remizy: {draw}           ║
+╚═══════════════════════╝""")
+if pocetHer>=10: print(f"""
+╔═══════════════════════╗
+║ VYSLEDKY              ║
+║   Pocet her: {pocetHer}
+║   Vyhry: {win}
+║   Prohry: {lost}
+║   Remizy: {draw}
 ╚═══════════════════════╝""")
